@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14B73DB55BEFB93979724910 /* Pods_Nizi_iOS_Applicatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B96EEA8D4FA77DA66BCBC4 /* Pods_Nizi_iOS_Applicatie.framework */; };
+		3F15032F23843FD700A914F9 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F15033123843FD700A914F9 /* localizable.strings */; };
 		3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C26238423FE0043E9CA /* AppDelegate.swift */; };
 		3FFE1C29238423FE0043E9CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C28238423FE0043E9CA /* ViewController.swift */; };
 		3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2A238423FE0043E9CA /* Main.storyboard */; };
@@ -18,6 +19,11 @@
 /* Begin PBXFileReference section */
 		07B9BB85E39B92F0435FE66F /* Pods-Nizi iOS Applicatie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nizi iOS Applicatie.release.xcconfig"; path = "Target Support Files/Pods-Nizi iOS Applicatie/Pods-Nizi iOS Applicatie.release.xcconfig"; sourceTree = "<group>"; };
 		39B96EEA8D4FA77DA66BCBC4 /* Pods_Nizi_iOS_Applicatie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nizi_iOS_Applicatie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F15032623843EB100A914F9 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		3F15032723843EB100A914F9 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3F15033023843FD700A914F9 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/localizable.strings; sourceTree = "<group>"; };
+		3F15033323843FF600A914F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/localizable.strings; sourceTree = "<group>"; };
+		3F15033423843FF700A914F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/localizable.strings; sourceTree = "<group>"; };
 		3FFE1C23238423FD0043E9CA /* Nizi iOS Applicatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nizi iOS Applicatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFE1C26238423FE0043E9CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFE1C28238423FE0043E9CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 				3FFE1C2D238423FE0043E9CA /* Assets.xcassets */,
 				3FFE1C2F238423FE0043E9CA /* LaunchScreen.storyboard */,
 				3FFE1C32238423FE0043E9CA /* Info.plist */,
+				3F15033123843FD700A914F9 /* localizable.strings */,
 			);
 			path = "Nizi iOS Applicatie";
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFE1C31238423FE0043E9CA /* LaunchScreen.storyboard in Resources */,
+				3F15032F23843FD700A914F9 /* localizable.strings in Resources */,
 				3FFE1C2E238423FE0043E9CA /* Assets.xcassets in Resources */,
 				3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */,
 			);
@@ -237,10 +245,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		3F15033123843FD700A914F9 /* localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F15033023843FD700A914F9 /* nl */,
+				3F15033323843FF600A914F9 /* Base */,
+				3F15033423843FF700A914F9 /* en */,
+			);
+			name = localizable.strings;
+			sourceTree = "<group>";
+		};
 		3FFE1C2A238423FE0043E9CA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3FFE1C2B238423FE0043E9CA /* Base */,
+				3F15032623843EB100A914F9 /* nl */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -249,6 +268,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3FFE1C30238423FE0043E9CA /* Base */,
+				3F15032723843EB100A914F9 /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -260,6 +280,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -317,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
