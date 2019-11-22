@@ -5,3 +5,14 @@
   Created by Informatica Haarlem on 19-11-19.
   Copyright © 2019 De Mobiele Jongens. All rights reserved.
 */
+"ApplicationName" = "Nizi";
+"LoginPageTitle" = "Inloggen";
+"UsernameLabel" = "Gebruikersnaam";
+"PasswordLabel" = "Wachtwoord";
+"Login" = "Inloggen";
+"NeedHelp" = "Hulp Nodig?";
+"NeedHelpSubtitle" = "Neem contact op met de Nierstichting of uw dietist.";
+"NierstichtingWeb" = "http://www.nierstichting.nl";
+"NierstichtingPhone" = "035 697 80 00";
+"NierstichtingPhoneSubtitle" = "Op werkdagen tussen 9.00 en 17.00 uur";
+"NierstichtingMail" = "info@nierstichting.nl";

@@ -27,7 +27,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgL-n1-5u8" userLabel="Page_Title">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgL-n1-5u8" userLabel="Page_Title">
                                         <rect key="frame" x="20" y="54" width="335" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -146,7 +146,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.43391628440366975" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.35069046253822628" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YJ2-a4-t5O" firstAttribute="top" secondItem="jZc-BG-ouB" secondAttribute="bottom" constant="-50" id="9S2-h6-fmS"/>
                             <constraint firstItem="jZc-BG-ouB" firstAttribute="leading" secondItem="dtD-ca-gBP" secondAttribute="leading" id="Fc2-6C-y5g"/>
@@ -158,6 +158,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dtD-ca-gBP"/>
                     </view>
+                    <connections>
+                        <outlet property="LoginButton" destination="SG0-ae-acw" id="htJ-S7-mvB"/>
+                        <outlet property="applicationNameLabel" destination="N10-ix-95c" id="VRt-8w-aD5"/>
+                        <outlet property="needHelpDescription" destination="nM0-HV-VoR" id="AhC-B6-LKN"/>
+                        <outlet property="needHelpLabel" destination="Jd4-1j-E3z" id="Xec-cJ-Y8H"/>
+                        <outlet property="nierstichtingMailLabel" destination="T2r-OC-IZh" id="q5a-Uw-zfT"/>
+                        <outlet property="nierstichtingPhoneLabel" destination="bHu-sb-6Pu" id="aBu-ME-q2v"/>
+                        <outlet property="nierstichtingWebImage" destination="qoe-TS-ZNf" id="Jej-VI-LES"/>
+                        <outlet property="nierstichtingWebLabel" destination="BSu-od-5QN" id="CEI-wg-mgw"/>
+                        <outlet property="nierstrichtingMailImage" destination="GhD-Ix-w3x" id="tpN-et-oOa"/>
+                        <outlet property="nierstrichtingPhoneImage" destination="GmB-Ye-yhB" id="TYx-hV-zTg"/>
+                        <outlet property="pageTitleLabel" destination="rgL-n1-5u8" id="Xbc-2l-J6C"/>
+                        <outlet property="passwordField" destination="HXj-xi-tWx" id="u94-pZ-MbP"/>
+                        <outlet property="passwordLabel" destination="5lO-yF-9ow" id="qUH-UX-h8h"/>
+                        <outlet property="usernameField" destination="WKo-14-eUZ" id="tbG-Uv-N1x"/>
+                        <outlet property="usernameLabel" destination="Roz-I3-cbj" id="U8e-Eg-UCN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaB-2B-JZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
