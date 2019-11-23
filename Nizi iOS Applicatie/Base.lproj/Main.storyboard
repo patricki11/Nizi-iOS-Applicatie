@@ -199,6 +199,99 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="-644.52773613193403"/>
         </scene>
+        <!--Patient List View Controller-->
+        <scene sceneID="Tg8-CT-pMS">
+            <objects>
+                <viewController storyboardIdentifier="PatientListViewController" id="bDR-T7-SWu" customClass="PatientListViewController" customModule="Nizi_iOS_Applicatie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDF-i1-Jfv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-pq-Vd3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGo-zh-j8r" userLabel="Application_Name">
+                                        <rect key="frame" x="15" y="15" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGG-YZ-hdT">
+                                        <rect key="frame" x="0.0" y="66" width="375" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.44313725490196076" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="PGo-zh-j8r" firstAttribute="leading" secondItem="vWt-pq-Vd3" secondAttribute="leading" constant="15" id="B9X-uj-RdA"/>
+                                    <constraint firstAttribute="height" constant="150" id="I7v-8s-HgD"/>
+                                    <constraint firstAttribute="trailing" secondItem="JGG-YZ-hdT" secondAttribute="trailing" id="IHj-yM-6VE"/>
+                                    <constraint firstItem="PGo-zh-j8r" firstAttribute="top" secondItem="vWt-pq-Vd3" secondAttribute="top" constant="15" id="UpD-1N-GJf"/>
+                                    <constraint firstItem="JGG-YZ-hdT" firstAttribute="leading" secondItem="vWt-pq-Vd3" secondAttribute="leading" id="V8p-1x-emq"/>
+                                    <constraint firstAttribute="bottom" secondItem="JGG-YZ-hdT" secondAttribute="bottom" constant="60" id="ktP-AC-OTR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0o-SX-RtI">
+                                <rect key="frame" x="20" y="100" width="335" height="547"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3XN-rg-7zM">
+                                        <rect key="frame" x="10" y="10" width="275" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="5Ev-gx-btc">
+                                        <rect key="frame" x="295" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="gir-oS-wfm"/>
+                                            <constraint firstAttribute="height" constant="30" id="zPD-hf-8H6"/>
+                                        </constraints>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-sk-Pgh">
+                                        <rect key="frame" x="0.0" y="50" width="335" height="497"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3XN-rg-7zM" firstAttribute="top" secondItem="w0o-SX-RtI" secondAttribute="top" constant="10" id="3EY-7i-niJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Ev-gx-btc" secondAttribute="trailing" constant="10" id="8D5-me-Fmx"/>
+                                    <constraint firstItem="5Ev-gx-btc" firstAttribute="top" secondItem="w0o-SX-RtI" secondAttribute="top" constant="10" id="Jf0-x0-1Vd"/>
+                                    <constraint firstItem="WYd-sk-Pgh" firstAttribute="leading" secondItem="w0o-SX-RtI" secondAttribute="leading" id="N65-MZ-JUx"/>
+                                    <constraint firstItem="WYd-sk-Pgh" firstAttribute="top" secondItem="3XN-rg-7zM" secondAttribute="bottom" constant="10" id="NM4-xF-dmF"/>
+                                    <constraint firstAttribute="bottom" secondItem="WYd-sk-Pgh" secondAttribute="bottom" id="Qeq-1L-UIX"/>
+                                    <constraint firstItem="3XN-rg-7zM" firstAttribute="leading" secondItem="w0o-SX-RtI" secondAttribute="leading" constant="10" id="hg2-Fn-8B6"/>
+                                    <constraint firstAttribute="trailing" secondItem="WYd-sk-Pgh" secondAttribute="trailing" id="knB-fw-fF7"/>
+                                    <constraint firstItem="5Ev-gx-btc" firstAttribute="leading" secondItem="3XN-rg-7zM" secondAttribute="trailing" constant="10" id="wT6-Xo-42i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.8862745098" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I2Y-Dl-kUg" firstAttribute="bottom" secondItem="w0o-SX-RtI" secondAttribute="bottom" constant="20" id="1GO-tc-010"/>
+                            <constraint firstItem="vWt-pq-Vd3" firstAttribute="top" secondItem="eDF-i1-Jfv" secondAttribute="top" id="CNA-AX-i8v"/>
+                            <constraint firstItem="vWt-pq-Vd3" firstAttribute="leading" secondItem="I2Y-Dl-kUg" secondAttribute="leading" id="G7M-Fi-s35"/>
+                            <constraint firstItem="I2Y-Dl-kUg" firstAttribute="trailing" secondItem="vWt-pq-Vd3" secondAttribute="trailing" id="HJR-lS-107"/>
+                            <constraint firstItem="w0o-SX-RtI" firstAttribute="leading" secondItem="I2Y-Dl-kUg" secondAttribute="leading" constant="20" id="MaQ-as-D08"/>
+                            <constraint firstItem="w0o-SX-RtI" firstAttribute="top" secondItem="vWt-pq-Vd3" secondAttribute="bottom" constant="-50" id="NpP-K8-P4Q"/>
+                            <constraint firstItem="I2Y-Dl-kUg" firstAttribute="trailing" secondItem="w0o-SX-RtI" secondAttribute="trailing" constant="20" id="QVA-az-KKp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I2Y-Dl-kUg"/>
+                    </view>
+                    <connections>
+                        <outlet property="addPatientButton" destination="5Ev-gx-btc" id="ylm-Y7-T6W"/>
+                        <outlet property="applicationNameLabel" destination="PGo-zh-j8r" id="aGC-2B-Xn8"/>
+                        <outlet property="pageTitleLabel" destination="JGG-YZ-hdT" id="JMD-1e-l8O"/>
+                        <outlet property="patientListTableView" destination="WYd-sk-Pgh" id="NjZ-HI-8eh"/>
+                        <outlet property="searchPatientField" destination="3XN-rg-7zM" id="cW8-IP-r1i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bNG-l3-JgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.8" y="-1081.7091454272863"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -215,6 +308,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="32" height="32"/>
         <image name="mail" width="32" height="32"/>
         <image name="phone" width="32" height="32"/>
         <image name="web" width="32" height="32"/>
