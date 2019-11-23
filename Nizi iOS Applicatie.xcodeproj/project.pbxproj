@@ -12,6 +12,8 @@
 		3F1503362384417200A914F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1503352384417200A914F9 /* LoginViewController.swift */; };
 		3F408CB523896CE7009F18C0 /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F408CB423896CE7009F18C0 /* PatientListViewController.swift */; };
 		3F408CB723897AA3009F18C0 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F408CB623897AA3009F18C0 /* Patient.swift */; };
+		3F408CBB23897EF5009F18C0 /* PatientListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F408CB923897EF5009F18C0 /* PatientListTableViewCell.swift */; };
+		3F408CBC23897EF5009F18C0 /* PatientListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F408CBA23897EF5009F18C0 /* PatientListTableViewCell.xib */; };
 		3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C26238423FE0043E9CA /* AppDelegate.swift */; };
 		3FFE1C29238423FE0043E9CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C28238423FE0043E9CA /* ViewController.swift */; };
 		3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2A238423FE0043E9CA /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 		3F1503352384417200A914F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F408CB423896CE7009F18C0 /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListViewController.swift; sourceTree = "<group>"; };
 		3F408CB623897AA3009F18C0 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		3F408CB923897EF5009F18C0 /* PatientListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListTableViewCell.swift; sourceTree = "<group>"; };
+		3F408CBA23897EF5009F18C0 /* PatientListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientListTableViewCell.xib; sourceTree = "<group>"; };
 		3FFE1C23238423FD0043E9CA /* Nizi iOS Applicatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nizi iOS Applicatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFE1C26238423FE0043E9CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFE1C28238423FE0043E9CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,8 +85,18 @@
 		3F15032523843DDA00A914F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F408CB823897EC3009F18C0 /* PatientListTableViewCell */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3F408CB823897EC3009F18C0 /* PatientListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F408CB923897EF5009F18C0 /* PatientListTableViewCell.swift */,
+				3F408CBA23897EF5009F18C0 /* PatientListTableViewCell.xib */,
+			);
+			path = PatientListTableViewCell;
 			sourceTree = "<group>";
 		};
 		3FFE1C1A238423FD0043E9CA = {
@@ -191,6 +205,7 @@
 			files = (
 				3FFE1C31238423FE0043E9CA /* LaunchScreen.storyboard in Resources */,
 				3F15032F23843FD700A914F9 /* Localizable.strings in Resources */,
+				3F408CBC23897EF5009F18C0 /* PatientListTableViewCell.xib in Resources */,
 				3FFE1C2E238423FE0043E9CA /* Assets.xcassets in Resources */,
 				3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */,
 			);
@@ -251,6 +266,7 @@
 				3F408CB523896CE7009F18C0 /* PatientListViewController.swift in Sources */,
 				3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */,
 				3F408CB723897AA3009F18C0 /* Patient.swift in Sources */,
+				3F408CBB23897EF5009F18C0 /* PatientListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
