@@ -30,6 +30,7 @@ class LoginViewController : UIViewController {
     
     @IBOutlet weak var nierstichtingWebLabel: UILabel!
     @IBOutlet weak var nierstichtingPhoneLabel: UILabel!
+    @IBOutlet weak var nierstichtingPhoneTimeLabel: UILabel!
     @IBOutlet weak var nierstichtingMailLabel: UILabel!
     
     override func viewDidLoad() {
@@ -48,6 +49,7 @@ class LoginViewController : UIViewController {
         LoginButton.setTitle("Login", for: .normal)
         nierstichtingWebLabel.text = NSLocalizedString("NierstichtingWeb", comment: "")
         nierstichtingPhoneLabel.text = NSLocalizedString("NierstichtingPhone", comment: "")
+        nierstichtingPhoneTimeLabel.text = NSLocalizedString("NierstichtingPhoneTime", comment: "")
         nierstichtingMailLabel.text = NSLocalizedString("NierstichtingMail", comment: "")
     }
     
