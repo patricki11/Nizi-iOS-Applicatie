@@ -19,7 +19,7 @@ class PatientListViewController : UIViewController {
     
     @IBOutlet weak var patientListTableView: UITableView!
     
-    var patientList : [String] = []
+    var patientList : [Patient] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
