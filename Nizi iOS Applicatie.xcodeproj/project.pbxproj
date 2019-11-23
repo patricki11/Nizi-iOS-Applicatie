@@ -10,6 +10,7 @@
 		14B73DB55BEFB93979724910 /* Pods_Nizi_iOS_Applicatie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B96EEA8D4FA77DA66BCBC4 /* Pods_Nizi_iOS_Applicatie.framework */; };
 		3F15032F23843FD700A914F9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F15033123843FD700A914F9 /* Localizable.strings */; };
 		3F1503362384417200A914F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1503352384417200A914F9 /* LoginViewController.swift */; };
+		3F408CB523896CE7009F18C0 /* PatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F408CB423896CE7009F18C0 /* PatientListViewController.swift */; };
 		3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C26238423FE0043E9CA /* AppDelegate.swift */; };
 		3FFE1C29238423FE0043E9CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C28238423FE0043E9CA /* ViewController.swift */; };
 		3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2A238423FE0043E9CA /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		3F15033323843FF600A914F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F15033423843FF700A914F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F1503352384417200A914F9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F408CB423896CE7009F18C0 /* PatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListViewController.swift; sourceTree = "<group>"; };
 		3FFE1C23238423FD0043E9CA /* Nizi iOS Applicatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nizi iOS Applicatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFE1C26238423FE0043E9CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFE1C28238423FE0043E9CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3F1503352384417200A914F9 /* LoginViewController.swift */,
+				3F408CB423896CE7009F18C0 /* PatientListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				3F1503362384417200A914F9 /* LoginViewController.swift in Sources */,
 				3FFE1C29238423FE0043E9CA /* ViewController.swift in Sources */,
+				3F408CB523896CE7009F18C0 /* PatientListViewController.swift in Sources */,
 				3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
