@@ -9,11 +9,6 @@
 import UIKit
 
 class DiaryListViewController: UIViewController {
-    
-    @IBOutlet weak var diaryPlusIcon: UIImageView!
-    @IBOutlet weak var diaryAdd: UILabel!
-    @IBOutlet weak var dairyTitle: UILabel!
-    @IBOutlet weak var diaryTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
