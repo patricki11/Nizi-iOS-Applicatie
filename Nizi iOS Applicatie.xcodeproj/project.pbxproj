@@ -21,6 +21,7 @@
 		3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2A238423FE0043E9CA /* Main.storyboard */; };
 		3FFE1C2E238423FE0043E9CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2D238423FE0043E9CA /* Assets.xcassets */; };
 		3FFE1C31238423FE0043E9CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2F238423FE0043E9CA /* LaunchScreen.storyboard */; };
+		9391A8E7238BEA7F00AF7AA5 /* DiaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9391A8E6238BEA7F00AF7AA5 /* DiaryListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		3FFE1C30238423FE0043E9CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FFE1C32238423FE0043E9CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		769D2CD3EAC7C8B2E988CFD2 /* Pods-Nizi iOS Applicatie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nizi iOS Applicatie.debug.xcconfig"; path = "Target Support Files/Pods-Nizi iOS Applicatie/Pods-Nizi iOS Applicatie.debug.xcconfig"; sourceTree = "<group>"; };
+		9391A8E6238BEA7F00AF7AA5 /* DiaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				3F1503352384417200A914F9 /* LoginViewController.swift */,
 				3F408CB423896CE7009F18C0 /* PatientListViewController.swift */,
 				3F408CBD238A825C009F18C0 /* AddPatientViewController.swift */,
+				9391A8E6238BEA7F00AF7AA5 /* DiaryListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 3FFE1C1A238423FD0043E9CA;
 			productRefGroup = 3FFE1C24238423FD0043E9CA /* Products */;
@@ -274,6 +278,7 @@
 				3FFE1C29238423FE0043E9CA /* ViewController.swift in Sources */,
 				3F408CB523896CE7009F18C0 /* PatientListViewController.swift in Sources */,
 				3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */,
+				9391A8E7238BEA7F00AF7AA5 /* DiaryListViewController.swift in Sources */,
 				3F408CB723897AA3009F18C0 /* Patient.swift in Sources */,
 				3F408CBB23897EF5009F18C0 /* PatientListTableViewCell.swift in Sources */,
 				3F408CBE238A825C009F18C0 /* AddPatientViewController.swift in Sources */,
