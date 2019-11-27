@@ -75,6 +75,9 @@
                                         </constraints>
                                         <color key="tintColor" red="0.99616746865432249" green="1" blue="0.97195226662950784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="Login:" destination="Plj-QQ-SWu" eventType="touchUpInside" id="DMm-2m-4cp"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd4-1j-E3z" userLabel="NeedHelp_Label">
                                         <rect key="frame" x="20" y="260" width="295" height="21"/>

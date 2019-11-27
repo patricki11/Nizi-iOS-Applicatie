@@ -15,6 +15,7 @@
 		3F408CBB23897EF5009F18C0 /* PatientListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F408CB923897EF5009F18C0 /* PatientListTableViewCell.swift */; };
 		3F408CBC23897EF5009F18C0 /* PatientListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F408CBA23897EF5009F18C0 /* PatientListTableViewCell.xib */; };
 		3F408CBE238A825C009F18C0 /* AddPatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F408CBD238A825C009F18C0 /* AddPatientViewController.swift */; };
+		3F408CC0238E68F8009F18C0 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F408CBF238E68F8009F18C0 /* Auth0.plist */; };
 		3FFE1C27238423FE0043E9CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C26238423FE0043E9CA /* AppDelegate.swift */; };
 		3FFE1C29238423FE0043E9CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE1C28238423FE0043E9CA /* ViewController.swift */; };
 		3FFE1C2C238423FE0043E9CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFE1C2A238423FE0043E9CA /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 		3F408CB923897EF5009F18C0 /* PatientListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientListTableViewCell.swift; sourceTree = "<group>"; };
 		3F408CBA23897EF5009F18C0 /* PatientListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientListTableViewCell.xib; sourceTree = "<group>"; };
 		3F408CBD238A825C009F18C0 /* AddPatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientViewController.swift; sourceTree = "<group>"; };
+		3F408CBF238E68F8009F18C0 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		3FFE1C23238423FD0043E9CA /* Nizi iOS Applicatie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nizi iOS Applicatie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFE1C26238423FE0043E9CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFE1C28238423FE0043E9CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				3FFE1C2F238423FE0043E9CA /* LaunchScreen.storyboard */,
 				3FFE1C32238423FE0043E9CA /* Info.plist */,
 				3F15033123843FD700A914F9 /* Localizable.strings */,
+				3F408CBF238E68F8009F18C0 /* Auth0.plist */,
 			);
 			path = "Nizi iOS Applicatie";
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFE1C31238423FE0043E9CA /* LaunchScreen.storyboard in Resources */,
+				3F408CC0238E68F8009F18C0 /* Auth0.plist in Resources */,
 				3F15032F23843FD700A914F9 /* Localizable.strings in Resources */,
 				3F408CBC23897EF5009F18C0 /* PatientListTableViewCell.xib in Resources */,
 				3FFE1C2E238423FE0043E9CA /* Assets.xcassets in Resources */,
@@ -247,12 +251,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Nizi iOS Applicatie/Pods-Nizi iOS Applicatie-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Auth0/Auth0.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Auth0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftKeychainWrapper.framework",
 			);
@@ -368,6 +374,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -418,6 +425,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
