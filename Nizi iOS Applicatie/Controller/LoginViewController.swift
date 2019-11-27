@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Auth0
 
 class LoginViewController : UIViewController {
     
@@ -56,5 +57,26 @@ class LoginViewController : UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func Login(_ sender: Any) {
+        Auth0
+            .authentication()
+            .login(
+                usernameOrEmail: "577234@student.inholland.nl",
+                password: "TestTestTest!",
+                multifactorCode: "Username-Password-Authentication",
+                connection: "",
+                scope: "openid",
+                parameters: [:])
+            .start { result in
+                print(result)
+                switch result {
+                case .success(let credentials):
+                    print("Obtained credentials: \(credentials)")
+                case .failure(let error):
+                    print("Failed with \(error)")
+                }
+        }
     }
 }
