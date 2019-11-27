@@ -9,4 +9,5 @@ target 'Nizi iOS Applicatie' do
   pod 'Alamofire', '4.6.0'
   pod 'Kingfisher', '4.6.2'
   pod 'SwiftKeychainWrapper', '3.0.1'
+  pod 'Auth0', '1.0'
 end
